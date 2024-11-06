@@ -1,61 +1,51 @@
-@import '../css/partials.css';
+@import './css/partials.css';
 
-h1 {
-    margin-top: 40px;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #F08080;
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10px;
+  justify-content: space-between;
 }
 
-form {
-    width: 80vw;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+  height: 400px;
+  background-color: #faebd7;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
 
-form p {
-    font-size: 14px;
-    margin-bottom: 25px;
+.card>img {
+  height: 200px;
+  width: 350px;
+  border-radius: 8px;
 }
 
-label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
+.card>.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #F08080;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+.card>.button:hover {
+  background-color: tomato;
 }
 
-textarea {
-    resize: vertical;
-}
 
-button{
-    background-color: #F08080;
-    color: #fff;
-    padding: 13px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    font-weight: 600;
-    font-size: 25px;
-}
-
-.button:hover {
-    background-color: tomato;
-}
-
-@media screen and (max-width: 480px) {
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-        width: 100%;
-    }
+.card>.button>a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
 }
